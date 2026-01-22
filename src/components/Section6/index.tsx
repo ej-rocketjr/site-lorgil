@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Map from '../Map'
+import Mapa from '../Mapa'
 
 export default function Section6() {
   return (
@@ -14,7 +14,7 @@ export default function Section6() {
       </div>
 
       {/* Componente do Mapa */}
-      <Map />
+      <Mapa />
 
       <div className="w-full bg-[#222222] text-white pt-6 md:pt-10 lg:pt-12 pb-0 font-poppins px-14">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-end gap-6 md:gap-12 lg:gap-16">
