@@ -4,6 +4,7 @@ import Image from "next/image";
 
 const colcciGlasses = [
   {
+    id: "colcci-gabi",
     title: "Óculos de Sol",
     linkImgGlasses: "/img/GlassesSection3/colcci-gabi.svg",
     modelo: "C6189KCE5",
@@ -11,6 +12,7 @@ const colcciGlasses = [
     linkImgEnterprise: "/img/Enterprises/colcci.svg",
   },
   {
+    id: "colcci-livia",
     title: "Óculos de Sol",
     linkImgGlasses: "/img/GlassesSection3/colcci-livia.svg",
     modelo: "C6204B9255",
@@ -18,6 +20,7 @@ const colcciGlasses = [
     linkImgEnterprise: "/img/Enterprises/colcci.svg",
   },
   {
+    id: "colcci-bandy5",
     title: "Óculos de Sol",
     linkImgGlasses: "/img/GlassesSection3/colcci-bandy-5.svg",
     modelo: "C6210A3455",
@@ -25,6 +28,7 @@ const colcciGlasses = [
     linkImgEnterprise: "/img/Enterprises/colcci.svg",
   },
   {
+    id: "colcci-cora1",
     title: "Óculos de Sol",
     linkImgGlasses: "/img/GlassesSection3/colcci-cora.svg",
     modelo: "C0150A0233",
@@ -32,6 +36,7 @@ const colcciGlasses = [
     linkImgEnterprise: "/img/Enterprises/colcci.svg",
   },
   {
+    id: "colcci-cora2",
     title: "Óculos de Sol",
     linkImgGlasses: "/img/GlassesSection3/colcci-cora.svg",
     modelo: "C0150A0233",
@@ -39,6 +44,7 @@ const colcciGlasses = [
     linkImgEnterprise: "/img/Enterprises/colcci.svg",
   },
   {
+    id: "colcci-aretharrx",
     title: "Óculos de Sol",
     linkImgGlasses: "/img/GlassesSection3/colcci-arethar-rx.svg",
     modelo: "C6125DJ757",
@@ -49,6 +55,7 @@ const colcciGlasses = [
 
 const lavoratoGlasses = [
   {
+    id: "lavorato-elle",
     title: "Óculos de Sol",
     linkImgGlasses: "/img/GlassesSection3/lovarato-elle.svg",
     modelo: "0154 / 0156",
@@ -56,6 +63,7 @@ const lavoratoGlasses = [
     linkImgEnterprise: "/img/Enterprises/lovarato.svg",
   },
   {
+    id: "lavorato-duelii",
     title: "Óculos de Sol",
     linkImgGlasses: "/img/GlassesSection3/lovarato-duelii.svg",
     modelo: "31011",
@@ -66,6 +74,7 @@ const lavoratoGlasses = [
 
 const fiammaGlasses = [
   {
+    id: "fiamma-casual",
     title: "Óculos de Sol",
     linkImgGlasses: "/img/GlassesSection3/fiamma-casual.svg",
     modelo: "41001 / 41002",
@@ -73,6 +82,7 @@ const fiammaGlasses = [
     linkImgEnterprise: "/img/Enterprises/fiamma.svg",
   },
   {
+    id: "fiamma-ride",
     title: "Óculos de Sol",
     linkImgGlasses: "/img/GlassesSection3/fiamma-ride.svg",
     modelo: "4055 / 4056",
@@ -80,6 +90,7 @@ const fiammaGlasses = [
     linkImgEnterprise: "/img/Enterprises/fiamma.svg",
   },
   {
+    id: "fiamma-lifestyle",
     title: "Óculos de Sol",
     linkImgGlasses: "/img/GlassesSection3/fiamma-lifestyle.svg",
     modelo: "4049",
@@ -87,6 +98,7 @@ const fiammaGlasses = [
     linkImgEnterprise: "/img/Enterprises/fiamma.svg",
   },
   {
+    id: "fiamma-modern",
     title: "Óculos de Sol",
     linkImgGlasses: "/img/GlassesSection3/fiamma-modern.svg",
     modelo: "4038",
@@ -94,6 +106,7 @@ const fiammaGlasses = [
     linkImgEnterprise: "/img/Enterprises/fiamma.svg",
   },
   {
+    id: "fiamma-velocity",
     title: "Óculos de Sol",
     linkImgGlasses: "/img/GlassesSection3/fiamma-velocity.svg",
     modelo: "41055 / 41056 / 41057",
@@ -101,6 +114,7 @@ const fiammaGlasses = [
     linkImgEnterprise: "/img/Enterprises/fiamma.svg",
   },
   {
+    id: "fiamma-speed",
     title: "Óculos de Sol",
     linkImgGlasses: "/img/GlassesSection3/fiamma-speed.svg",
     modelo: "41027 / 41028",
@@ -149,8 +163,8 @@ export default function Section3() {
         </div>
         <div className="w-full md:w-1/2 mt-6 md:mt-0 flex justify-center px-4">
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 w-full">
-            {colcciGlasses.slice(0, 6).map((glass, index) => (
-              <div key={index} className="flex justify-center">
+            {colcciGlasses.slice(0, 6).map((glass) => (
+              <div key={glass.id} className="flex justify-center">
                 <SmallCardGlasses
                   title={glass.title}
                   linkImgGlasses={glass.linkImgGlasses}
@@ -177,9 +191,9 @@ export default function Section3() {
         </div>
         <div className="container mx-auto px-4 mt-4 md:mt-0 md:w-1/2">
           <div className="flex justify-around md:justify-between w-full gap-4">
-            {lavoratoGlasses.map((glass, index) => (
+            {lavoratoGlasses.map((glass) => (
               <BigCardGlasses
-                key={index}
+                key={glass.id}
                 title={glass.title}
                 linkImgGlasses={glass.linkImgGlasses}
                 modelo={glass.modelo}
@@ -235,8 +249,8 @@ export default function Section3() {
         </div>
         <div className="w-full md:w-1/2 mt-6 md:mt-0 flex justify-center px-4">
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 w-full">
-            {fiammaGlasses.slice(0, 6).map((glass, index) => (
-              <div key={index} className="flex justify-center">
+            {fiammaGlasses.slice(0, 6).map((glass) => (
+              <div key={glass.id} className="flex justify-center">
                 <SmallCardGlasses
                   title={glass.title}
                   linkImgGlasses={glass.linkImgGlasses}
