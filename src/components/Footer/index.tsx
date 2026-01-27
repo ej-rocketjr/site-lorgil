@@ -18,7 +18,7 @@ export default function Footer() {
           <div className="text-center md:text-left text-xs flex flex-col md:flex-row gap-2 md:gap-6">
             <a href="/politica-de-privacidade" className="hover:opacity-75 transition-opacity">Política de Privacidade</a>
             <a href="/termos-de-uso" className="hover:opacity-75 transition-opacity">Termos de Uso</a>
-            <p>© 2025 Lorgil Ótica. Desenvolvido por <a className="hover:opacity-75 transition-opacity" href="https://rocketjr.com.br" target="_blank">ROCKETJR</a></p>
+            <p>© 2025 Lorgil Ótica. Desenvolvido por <a className="hover:opacity-75 transition-opacity" href="https://rocketjr.com.br" rel="noopener" target="_blank">ROCKETJR</a></p>
           </div>
         </div>
       </div>

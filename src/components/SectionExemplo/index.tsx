@@ -16,7 +16,7 @@ export default function SectionExemplo() {
           possimus!
         </p>
         <div className="flex justify-center">
-          <button className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-md transition-colors shadow-md">
+          <button type="button" className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-md transition-colors shadow-md">
             Saiba Mais
           </button>
         </div>

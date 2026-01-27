@@ -79,6 +79,7 @@ function Header() {
             </h1>
             <li className="relative" ref={marcasRef}>
               <button
+                type="button"
                 onClick={toggleMarcas}
                 className="flex items-center gap-1 hover:text-red-300 transition-colors focus:outline-none "
               >
@@ -92,89 +93,116 @@ function Header() {
                 <div className="absolute top-full left-0 mt-2 w-48 bg-white text-red-800 rounded shadow-lg z-50">
                   <ul className="py-2">
                     <li>
-                      <a
-                        href="#Mormaii"
-                        className="block px-4 py-2 hover:bg-red-100 transition-colors"
-                        onClick={() => setIsMarcasOpen(false)}
+                      <button
+                        type="button"
+                        onClick={() => {
+                          window.location.hash = '#Mormaii';
+                          setIsMarcasOpen(false);
+                        }}
+                        className="block w-full text-left px-4 py-2 hover:bg-red-100 transition-colors"
                       >
                         Mormaii
-                      </a>
+                      </button>
                     </li>
                     <li>
-                      <a
-                        href="#JeanPierre"
-                        className="block px-4 py-2 hover:bg-red-100 transition-colors"
-                        onClick={() => setIsMarcasOpen(false)}
+                      <button
+                        type="button"
+                        onClick={() => {
+                          window.location.hash = '#JeanPierre';
+                          setIsMarcasOpen(false);
+                        }}
+                        className="block w-full text-left px-4 py-2 hover:bg-red-100 transition-colors"
                       >
                         Jean Pierre
-                      </a>
+                      </button>
                     </li>
                     <li>
-                      <a
-                        href="#Colcci"
-                        className="block px-4 py-2 hover:bg-red-100 transition-colors"
-                        onClick={() => setIsMarcasOpen(false)}
+                      <button
+                        type="button"
+                        onClick={() => {
+                          window.location.hash = '#Colcci';
+                          setIsMarcasOpen(false);
+                        }}
+                        className="block w-full text-left px-4 py-2 hover:bg-red-100 transition-colors"
                       >
                         Colcci
-                      </a>
+                      </button>
                     </li>
                     <li>
-                      <a
-                        href="#Lavorato"
-                        className="block px-4 py-2 hover:bg-red-100 transition-colors"
-                        onClick={() => setIsMarcasOpen(false)}
+                      <button
+                        type="button"
+                        onClick={() => {
+                          window.location.hash = '#Lavorato';
+                          setIsMarcasOpen(false);
+                        }}
+                        className="block w-full text-left px-4 py-2 hover:bg-red-100 transition-colors"
                       >
                         Lavorato
-                      </a>
+                      </button>
                     </li>
 
                     <li>
-                      <a
-                        href="#Fiamma"
-                        className="block px-4 py-2 hover:bg-red-100 transition-colors"
-                        onClick={() => setIsMarcasOpen(false)}
+                      <button
+                        type="button"
+                        onClick={() => {
+                          window.location.hash = '#Fiamma';
+                          setIsMarcasOpen(false);
+                        }}
+                        className="block w-full text-left px-4 py-2 hover:bg-red-100 transition-colors"
                       >
                         Fiamma
-                      </a>
+                      </button>
                     </li>
 
                     <li>
-                      <a
-                        href="#DusterConcept"
-                        className="block px-4 py-2 hover:bg-red-100 transition-colors"
-                        onClick={() => setIsMarcasOpen(false)}
+                      <button
+                        type="button"
+                        onClick={() => {
+                          window.location.hash = '#DusterConcept';
+                          setIsMarcasOpen(false);
+                        }}
+                        className="block w-full text-left px-4 py-2 hover:bg-red-100 transition-colors"
                       >
                         Duster Concept
-                      </a>
+                      </button>
                     </li>
                     <li>
-                      <a
-                        href="#CarolCazassa"
-                        className="block px-4 py-2 hover:bg-red-100 transition-colors"
-                        onClick={() => setIsMarcasOpen(false)}
+                      <button
+                        type="button"
+                        onClick={() => {
+                          window.location.hash = '#CarolCazassa';
+                          setIsMarcasOpen(false);
+                        }}
+                        className="block w-full text-left px-4 py-2 hover:bg-red-100 transition-colors"
                       >
                         Carol Cazassa
-                      </a>
+                      </button>
                     </li>
 
                     <li>
-                      <a
-                        href="#Vilenev"
-                        className="block px-4 py-2 hover:bg-red-100 transition-colors"
-                        onClick={() => setIsMarcasOpen(false)}
+                      <button
+                        type="button"
+                        onClick={() => {
+                          window.location.hash = '#Vilenev';
+                          setIsMarcasOpen(false);
+                        }}
+                        className="block w-full text-left px-4 py-2 hover:bg-red-100 transition-colors"
                       >
                         Vileney
-                      </a>
+                      </button>
                     </li>
 
                     <li>
-                      <a
-                        href="#Nanff"
-                        className="block px-4 py-2 hover:bg-red-100 transition-colors"
-                        onClick={() => setIsMarcasOpen(false)}
+                      <button
+                        type="button"
+                        onClick={() => {
+                          window.location.hash = '#Nanff';
+                          setIsMarcasOpen(false);
+                        }}
+                        className="block w-full text-left px-4 py-2 hover:bg-red-100 transition-colors"
                       >
                         Nanff
-                      </a>
+                      </button>
                     </li>
                   </ul>
                 </div>
@@ -193,6 +221,7 @@ function Header() {
         </div>
 
         <button
+          type="button"
           ref={hamburgerRef}
           className="md:hidden text-white"
           onClick={toggleMenu}
@@ -210,6 +239,7 @@ function Header() {
               <ul className="flex flex-col gap-4">
                 <li ref={marcasRef}>
                   <button
+                    type="button"
                     onClick={toggleMarcas}
                     className="flex items-center gap-1 py-2 w-full text-left hover:text-red-300 transition-colors focus:outline-none"
                   >
@@ -222,51 +252,71 @@ function Header() {
                   {isMarcasOpen && (
                     <div className="pl-4 mt-2 border-l border-red-600">
                       <div className="grid grid-cols-2 gap-2">
-                        <a href="#Mormaii" className="flex flex-col items-center p-2 bg-red-800/30 rounded hover:bg-red-800/50 transition-colors text-center"
-                          onClick={() => setIsMarcasOpen(false)}>
+                        <button type="button" onClick={() => {
+                          window.location.hash = '#Mormaii';
+                          setIsMarcasOpen(false);
+                        }} className="flex flex-col items-center p-2 bg-red-800/30 rounded hover:bg-red-800/50 transition-colors text-center">
                           <Glasses className="w-5 h-5 mb-1" />
                           <span className="text-xs">Mormaii</span>
-                        </a>
-                        <a href="#JeanPierre" className="flex flex-col items-center p-2 bg-red-800/30 rounded hover:bg-red-800/50 transition-colors text-center"
-                          onClick={() => setIsMarcasOpen(false)}>
+                        </button>
+                        <button type="button" onClick={() => {
+                          window.location.hash = '#JeanPierre';
+                          setIsMarcasOpen(false);
+                        }} className="flex flex-col items-center p-2 bg-red-800/30 rounded hover:bg-red-800/50 transition-colors text-center">
                           <Glasses className="w-5 h-5 mb-1" />
                           <span className="text-xs">Jean Pierre</span>
-                        </a>
-                        <a href="#Colcci" className="flex flex-col items-center p-2 bg-red-800/30 rounded hover:bg-red-800/50 transition-colors text-center"
-                          onClick={() => setIsMarcasOpen(false)}>
+                        </button>
+                        <button type="button" onClick={() => {
+                          window.location.hash = '#Colcci';
+                          setIsMarcasOpen(false);
+                        }} className="flex flex-col items-center p-2 bg-red-800/30 rounded hover:bg-red-800/50 transition-colors text-center">
                           <Glasses className="w-5 h-5 mb-1" />
                           <span className="text-xs">Colcci</span>
-                        </a>
-                        <a href="#Lavorato" className="flex flex-col items-center p-2 bg-red-800/30 rounded hover:bg-red-800/50 transition-colors text-center"
-                          onClick={() => setIsMarcasOpen(false)}>
+                        </button>
+                        <button type="button" onClick={() => {
+                          window.location.hash = '#Lavorato';
+                          setIsMarcasOpen(false);
+                        }} className="flex flex-col items-center p-2 bg-red-800/30 rounded hover:bg-red-800/50 transition-colors text-center">
                           <Glasses className="w-5 h-5 mb-1" />
                           <span className="text-xs">Lavorato</span>
-                        </a>
-                        <a href="#Fiamma" className="flex flex-col items-center p-2 bg-red-800/30 rounded hover:bg-red-800/50 transition-colors text-center"
-                          onClick={() => setIsMarcasOpen(false)}>
+                        </button>
+                        <button type="button" onClick={() => {
+                          window.location.hash = '#Fiamma';
+                          setIsMarcasOpen(false);
+                        }} className="flex flex-col items-center p-2 bg-red-800/30 rounded hover:bg-red-800/50 transition-colors text-center">
                           <Glasses className="w-5 h-5 mb-1" />
                           <span className="text-xs">Fiamma</span>
-                        </a>
-                        <a href="#DusterConcept" className="flex flex-col items-center p-2 bg-red-800/30 rounded hover:bg-red-800/50 transition-colors text-center"
-                          onClick={() => setIsMarcasOpen(false)}>
+                        </button>
+                        <button type="button" onClick={() => {
+                          window.location.hash = '#DusterConcept';
+                          setIsMarcasOpen(false);
+                        }} className="flex flex-col items-center p-2 bg-red-800/30 rounded hover:bg-red-800/50 transition-colors text-center">
                           <Glasses className="w-5 h-5 mb-1" />
                           <span className="text-xs">Duster</span>
-                        </a>
-                        <a href="#CarolCazassa" className="flex flex-col items-center p-2 bg-red-800/30 rounded hover:bg-red-800/50 transition-colors text-center"
-                          onClick={() => setIsMarcasOpen(false)}>
+                        </button>
+                        <button type="button" onClick={() => {
+                          window.location.hash = '#CarolCazassa';
+                          setIsMarcasOpen(false);
+                        }} className="flex flex-col items-center p-2 bg-red-800/30 rounded hover:bg-red-800/50 transition-colors text-center">
                           <Glasses className="w-5 h-5 mb-1" />
                           <span className="text-xs">Carol</span>
-                        </a>
-                        <a href="#Vilenev" className="flex flex-col items-center p-2 bg-red-800/30 rounded hover:bg-red-800/50 transition-colors text-center"
-                          onClick={() => { setIsMarcasOpen(false); setIsMenuOpen(false); }}>
+                        </button>
+                        <button type="button" onClick={() => {
+                          window.location.hash = '#Vilenev';
+                          setIsMarcasOpen(false);
+                          setIsMenuOpen(false);
+                        }} className="flex flex-col items-center p-2 bg-red-800/30 rounded hover:bg-red-800/50 transition-colors text-center">
                           <Glasses className="w-5 h-5 mb-1" />
                           <span className="text-xs">Vileney</span>
-                        </a>
-                        <a href="#Nanff" className="flex flex-col items-center p-2 bg-red-800/30 rounded hover:bg-red-800/50 transition-colors text-center"
-                          onClick={() => { setIsMarcasOpen(false); setIsMenuOpen(false); }}>
+                        </button>
+                        <button type="button" onClick={() => {
+                          window.location.hash = '#Nanff';
+                          setIsMarcasOpen(false);
+                          setIsMenuOpen(false);
+                        }} className="flex flex-col items-center p-2 bg-red-800/30 rounded hover:bg-red-800/50 transition-colors text-center">
                           <Glasses className="w-5 h-5 mb-1" />
                           <span className="text-xs">Nanff</span>
-                        </a>
+                        </button>
                       </div>
                     </div>
                   )}

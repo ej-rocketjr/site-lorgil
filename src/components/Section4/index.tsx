@@ -4,6 +4,7 @@ import SmallCardGlasses from "../SmallCardGlasses"
 function Section4 (){
     const DusterConcept = [
         {
+            id: "dc-1",
             title:"Modelo DC",
             linkImgGlasses:"/img/ImgsSection4/OculosDC/img1.svg",
             modelo:"0000",
@@ -12,6 +13,7 @@ function Section4 (){
         },
 
         {
+            id: "dc-2",
             title:"Modelo DC",
             linkImgGlasses:"/img/ImgsSection4/OculosDC/img2.svg",
             modelo:"0000",
@@ -20,6 +22,7 @@ function Section4 (){
         },
 
         {
+            id: "dc-3",
             title:"Modelo DC",
             linkImgGlasses:"/img/ImgsSection4/OculosDC/img3.svg",
             modelo:"0000",
@@ -28,6 +31,7 @@ function Section4 (){
         },
 
         {
+            id: "dc-4",
             title:"Modelo DC",
             linkImgGlasses:"/img/ImgsSection4/OculosDC/img4.svg",
             modelo:"0000",
@@ -36,6 +40,7 @@ function Section4 (){
         },
 
         {
+            id: "dc-5",
             title:"Modelo DC",
             linkImgGlasses:"/img/ImgsSection4/OculosDC/img5.svg",
             modelo:"0000",
@@ -47,6 +52,7 @@ function Section4 (){
 
     const CarolCazassa = [
         {
+            id: "cc-1",
             title:"Modelo CorolCazassa",
             linkImgGlasses:"/img/ImgsSection4/OculosCC/img1.svg",
             modelo:"1111",
@@ -55,6 +61,7 @@ function Section4 (){
         },
 
         {
+            id: "cc-2",
             title:"Modelo CorolCazassa",
             linkImgGlasses:"/img/ImgsSection4/OculosCC/img2.svg",
             modelo:"1111",
@@ -63,6 +70,7 @@ function Section4 (){
         },
 
         {
+            id: "cc-3",
             title:"Modelo CorolCazassa",
             linkImgGlasses:"/img/ImgsSection4/OculosCC/img3.svg",
             modelo:"1111",
@@ -71,6 +79,7 @@ function Section4 (){
         },
 
         {
+            id: "cc-4",
             title:"Modelo CorolCazassa",
             linkImgGlasses:"/img/ImgsSection4/OculosCC/img4.svg",
             modelo:"1111",
@@ -79,6 +88,7 @@ function Section4 (){
         },
 
         {
+            id: "cc-5",
             title:"Modelo CorolCazassa",
             linkImgGlasses:"/img/ImgsSection4/OculosCC/img5.svg",
             modelo:"1111",
@@ -90,6 +100,7 @@ function Section4 (){
 
     const Vilenev = [
         {
+            id: "vil-1",
             title:"Modelo Vilenev",
             linkImgGlasses:"/img/ImgsSection4/OculosVilenev/img1.svg",
             modelo:"1111",
@@ -98,6 +109,7 @@ function Section4 (){
         },
 
         {
+            id: "vil-2",
             title:"Modelo Vilenev",
             linkImgGlasses:"/img/ImgsSection4/OculosVilenev/img2.svg",
             modelo:"1111",
@@ -106,6 +118,7 @@ function Section4 (){
         },
 
         {
+            id: "vil-3",
             title:"Modelo Vilenev",
             linkImgGlasses:"/img/ImgsSection4/OculosVilenev/img3.svg",
             modelo:"1111",
@@ -114,6 +127,7 @@ function Section4 (){
         },
 
         {
+            id: "vil-4",
             title:"Modelo Vilenev",
             linkImgGlasses:"/img/ImgsSection4/OculosVilenev/img4.svg",
             modelo:"1111",
@@ -122,6 +136,7 @@ function Section4 (){
         },
 
         {
+            id: "vil-5",
             title:"Modelo Vilenev",
             linkImgGlasses:"/img/ImgsSection4/OculosVilenev/img5.svg",
             modelo:"1111",
@@ -149,9 +164,9 @@ function Section4 (){
             <div className="flex flex-col">
                 <div className="flex flex-col gap-5">
                     <div id="DusterConcept" className="flex flex-wrap gap-5 justify-center items-center scroll-mt-80">
-                        {DusterConcept.map((oculos, index)=>(
+                        {DusterConcept.map((oculos)=>(
                             <SmallCardGlasses
-                            key={index}
+                            key={oculos.id}
                             title={oculos.title}
                             linkImgGlasses={oculos.linkImgGlasses}
                             modelo={oculos.modelo}
@@ -167,9 +182,9 @@ function Section4 (){
             <div className="flex flex-col">
                 <div className="flex flex-col gap-5">
                     <div id="CarolCazassa" className="flex flex-wrap gap-5 justify-center items-center scroll-mt-80">
-                        {CarolCazassa.map((oculos, index)=>(
+                        {CarolCazassa.map((oculos)=>(
                             <SmallCardGlasses
-                            key={index}
+                            key={oculos.id}
                             title={oculos.title}
                             linkImgGlasses={oculos.linkImgGlasses}
                             modelo={oculos.modelo}
@@ -185,9 +200,9 @@ function Section4 (){
             <div className="flex flex-col">
                 <div className="flex flex-col gap-5">
                     <div id="Vilenev" className="flex flex-wrap gap-5 justify-center items-center scroll-mt-80">
-                        {Vilenev.map((oculos, index)=>(
+                        {Vilenev.map((oculos)=>(
                             <SmallCardGlasses
-                            key={index}
+                            key={oculos.id}
                             title={oculos.title}
                             linkImgGlasses={oculos.linkImgGlasses}
                             modelo={oculos.modelo}

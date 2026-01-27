@@ -1,4 +1,4 @@
-export default function Map() {
+export default function Mapa() {
   return (
     <div className="w-full bg-gray-50 py-8">
       <div className="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-6xl mx-auto mb-0">
